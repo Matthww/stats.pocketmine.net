@@ -77,13 +77,13 @@ function admin_header() {
         <title>PocketMine :: Administration</title>
 		<meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="https://d2jz01fyat1phn.cloudfront.net/css/combined.css" rel="stylesheet" />
-        <link href="https://d2jz01fyat1phn.cloudfront.net/css/bootstrap-login.css" rel="stylesheet" />
-        <script src="https://d2jz01fyat1phn.cloudfront.net/javascript/jquery.js" type="text/javascript"></script>
+        <link href="http://static.stats.pocketmine.net/css/combined.css" rel="stylesheet" />
+        <link href="http://static.stats.pocketmine.net/css/bootstrap-login.css" rel="stylesheet" />
+        <script src="http://static.stats.pocketmine.net/javascript/jquery.js" type="text/javascript"></script>
     </head>
     <body>
         <div id="logo">
-            <img src="https://d2jz01fyat1phn.cloudfront.net/img/logo.png" alt="" />
+            <img src="http://static.stats.pocketmine.net/img/logo.png" alt="" />
         </div>
 
 

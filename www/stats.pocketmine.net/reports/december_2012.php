@@ -38,9 +38,9 @@ $avg_visit = '00:03:26';
                 </ul>
             </div>
             <div class="span8">
-                <a href="https://d2jz01fyat1phn.cloudfront.net/reports/<?php echo $current; ?>/analytics_monthly.png"
+                <a href="http://static.stats.pocketmine.net/reports/<?php echo $current; ?>/analytics_monthly.png"
                    target="_blank"><img
-                        src="https://d2jz01fyat1phn.cloudfront.net/reports/<?php echo $current; ?>/analytics_monthly.png"/></a>
+                        src="http://static.stats.pocketmine.net/reports/<?php echo $current; ?>/analytics_monthly.png"/></a>
             </div>
         </div>
     </div>
@@ -51,9 +51,9 @@ $avg_visit = '00:03:26';
     <div class="widget-content">
         <div class="row-fluid">
             <div class="span12" style="text-align: center;">
-                <a href="https://d2jz01fyat1phn.cloudfront.net/reports/<?php echo $current; ?>/analytics_historical.png"
+                <a href="http://static.stats.pocketmine.net/reports/<?php echo $current; ?>/analytics_historical.png"
                    target="_blank"><img
-                        src="https://d2jz01fyat1phn.cloudfront.net/reports/<?php echo $current; ?>/analytics_historical.png"/></a>
+                        src="http://static.stats.pocketmine.net/reports/<?php echo $current; ?>/analytics_historical.png"/></a>
             </div>
         </div>
     </div>
@@ -65,9 +65,9 @@ $avg_visit = '00:03:26';
     <div class="widget-content">
         <div class="row-fluid">
             <div class="span12" style="text-align: center;">
-                <a href="https://d2jz01fyat1phn.cloudfront.net/reports/<?php echo $current; ?>/nginx_requests.png"
+                <a href="http://static.stats.pocketmine.net/reports/<?php echo $current; ?>/nginx_requests.png"
                    target="_blank"><img
-                        src="https://d2jz01fyat1phn.cloudfront.net/reports/<?php echo $current; ?>/nginx_requests.png"/></a>
+                        src="http://static.stats.pocketmine.net/reports/<?php echo $current; ?>/nginx_requests.png"/></a>
             </div>
         </div>
     </div>
@@ -79,9 +79,9 @@ $avg_visit = '00:03:26';
     <div class="widget-content">
         <div class="row-fluid">
             <div class="span12" style="text-align: center;">
-                <a href="https://d2jz01fyat1phn.cloudfront.net/reports/<?php echo $current; ?>/mysql_queries.png"
+                <a href="http://static.stats.pocketmine.net/reports/<?php echo $current; ?>/mysql_queries.png"
                    target="_blank"><img
-                        src="https://d2jz01fyat1phn.cloudfront.net/reports/<?php echo $current; ?>/mysql_queries.png"/></a>
+                        src="http://static.stats.pocketmine.net/reports/<?php echo $current; ?>/mysql_queries.png"/></a>
             </div>
         </div>
     </div>
@@ -92,9 +92,9 @@ $avg_visit = '00:03:26';
     <div class="widget-content">
         <div class="row-fluid">
             <div class="span12" style="text-align: center;">
-                <a href="https://d2jz01fyat1phn.cloudfront.net/reports/<?php echo $current; ?>/mysql_rows.png"
+                <a href="http://static.stats.pocketmine.net/reports/<?php echo $current; ?>/mysql_rows.png"
                    target="_blank"><img
-                        src="https://d2jz01fyat1phn.cloudfront.net/reports/<?php echo $current; ?>/mysql_rows.png"/></a>
+                        src="http://static.stats.pocketmine.net/reports/<?php echo $current; ?>/mysql_rows.png"/></a>
             </div>
         </div>
     </div>

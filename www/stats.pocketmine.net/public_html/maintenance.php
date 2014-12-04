@@ -15,7 +15,7 @@
     <link href="http://static.stats.pocketmine.net/css/fam-icons.css" rel="stylesheet"/>
 
     <!-- jquery, main, bootstrap -->
-    <!-- <script src="https://d2jz01fyat1phn.cloudfront.net/javascript/full-2013-06-08.js" type="text/javascript"></script> -->
+    <!-- <script src="http://static.stats.pocketmine.net/javascript/full-2013-06-08.js" type="text/javascript"></script> -->
     <script src="http://static.stats.pocketmine.net/javascript/libraries/jquery/jquery.min.js" type="text/javascript"></script>
     <script src="http://static.stats.pocketmine.net/javascript/libraries/jquery/jquery-ui.custom.js" type="text/javascript"></script>
     <script src="http://static.stats.pocketmine.net/javascript/libraries/jquery/jquery.pjax.js" type="text/javascript"></script>
