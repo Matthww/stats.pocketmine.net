@@ -42,7 +42,7 @@ while ($row = $query->fetch()) {
     $pluginCount++;
 
     $pluginsHTML .= '<tr>
-                        <td> <a href="/plugin/' . $safeUrlName . '">' . $safeName . '</a> </td>
+                        <td> <a href="/plugin.php?plugin=' . $safeUrlName . '">' . $safeName . '</a> </td>
                         <td> ' . $row['Version'] . ' </td>
                         <td> ' . $row['Revision'] . ' </td>
                         <td> ' . epochToHumanString($row['LastSent']) . ' ago </td>
@@ -68,7 +68,7 @@ while ($row = $query->fetch()) {
     $safeUrlName = urlencode($safeName);
 
     $customDataHTML .= '<tr>
-                        <td> <a href="/plugin/' . $safeUrlName . '">' . $safeName . '</a> </td>
+                        <td> <a href="/plugin.php?plugin=' . $safeUrlName . '">' . $safeName . '</a> </td>
                         <td> ' . htmlentities($row['GraphName']) . '</td>
                         <td> ' . htmlentities($row['ColumnName']) . '</td>
                         <td> ' . $row['DataPoint'] . '</td>

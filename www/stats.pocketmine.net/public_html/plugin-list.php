@@ -28,13 +28,13 @@ $totalPages = ceil(countPlugins(PLUGIN_ORDER_POPULARITY) / PLUGIN_LIST_RESULTS_P
 $offset = ($currentPage - 1) * PLUGIN_LIST_RESULTS_PER_PAGE;
 
 if ($currentPage > $totalPages) {
-    header('Location: /plugin-list/' . $totalPages . '/');
+    header('Location: /plugin-list.php?page=' . $totalPages);
     exit;
 }
 
 /// Templating
 $page_title = 'PocketMine :: Plugin List';
-$breadcrumbs = '<a href="/plugin-list/" class="current">Plugin List</a>';
+$breadcrumbs = '<a href="/plugin-list.php" class="current">Plugin List</a>';
 send_header();
 
 echo '
@@ -79,7 +79,7 @@ foreach (loadPlugins(PLUGIN_ORDER_POPULARITY, PLUGIN_LIST_RESULTS_PER_PAGE, $off
         $rank .= ' <i class="fam-bullet-blue" title="No change"></i>';
     }
 
-    echo '                          <tr id="plugin-list-item"> <td style="text-align: center;">' . $rank . ' </td> <td> <a href="/plugin/' . htmlentities($plugin->getName()) . '" target="_blank">' . $pluginName . '</a> </td> <td style="text-align: center;"> ' . $format . ' </td> </tr>
+    echo '                          <tr id="plugin-list-item"> <td style="text-align: center;">' . $rank . ' </td> <td> <a href="/plugin.php?plugin=' . htmlentities($plugin->getName()) . '" target="_blank">' . $pluginName . '</a> </td> <td style="text-align: center;"> ' . $format . ' </td> </tr>
 ';
     $step++;
 }

@@ -25,7 +25,7 @@ $totalPages = ceil(countPlugins(PLUGIN_ORDER_POPULARITY) / PLUGIN_LIST_RESULTS_P
 $offset = ($currentPage - 1) * PLUGIN_LIST_RESULTS_PER_PAGE;
 
 if ($currentPage > $totalPages) {
-    header('Location: /plugin-list/' . $totalPages . '/');
+    header('Location: /global-stats.php?page=' . $totalPages);
     exit;
 }
 
@@ -124,12 +124,12 @@ echo '
 					<div class="span12 center" style="text-align: center;">
 						<ul class="quick-actions" style="margin: 0;">
 							<li>
-								<a href="http://api.stats.pocketmine.net/signature/All+Servers.png" target="_blank">
+								<a href="http://api.stats.pocketmine.net/signature.php?plugin=All+Servers.png" target="_blank">
 									<span>Signature image</span>
 								</a>
 							</li>
 							<li>
-								<a href="http://api.stats.pocketmine.net/plugin-preview/All+Servers.png" target="_blank">
+								<a href="http://api.stats.pocketmine.net/plugin-preview.php?plugin=All+Servers.png" target="_blank">
 									<span>Signature image (no borders/branding)</span>
 								</a>
 							</li>

@@ -44,12 +44,12 @@ $encodedName = urlencode($pluginName); // encoded name, for use in signature url
 $more = '';
 
 if (is_loggedin() && in_array($plugin, get_accessible_plugins(false))) {
-    $more = '<li><a href="/admin/plugin/' . $encodedName . '/view">Edit in Admin Panel</a>';
+    $more = '<li><a href="/admin/viewplugin.php?plugin=' . $encodedName . '">Edit in Admin Panel</a>';
 }
 
 /// Template hook
 $page_title = 'PocketMine :: ' . $pluginName;
-$breadcrumbs = '<a href="/plugin/' . $encodedName . '" class="current">Plugin: ' . $pluginName . ' by '  . htmlentities($plugin->getAuthors()) . '</a>';
+$breadcrumbs = '<a href="/plugin.php?plugin=' . $encodedName . '" class="current">Plugin: ' . $pluginName . ' by '  . htmlentities($plugin->getAuthors()) . '</a>';
 $sidebar_more = '
                 <li class="submenu active open">
                     <a href="#"><i class="icon icon-star"></i> <span>Plugin: <strong>' . $pluginName . '</strong></span></a>

@@ -29,7 +29,7 @@ define('PLUGIN_LIST_RESULTS_PER_PAGE', 30);
 
 // Global plugin ID, used to store global stats so
 // we can easily re-use our own methods
-define('GLOBAL_PLUGIN_ID', -1);
+define('GLOBAL_PLUGIN_ID', 1);
 
 // Connect to the caching daemon
 $cache = new Cache();
@@ -1108,7 +1108,7 @@ function sendPluginRequestEmail($email, $plugin, $approved) {
                 You recently submitted a plugin request for the plugin <b>$pluginName</b> which has been <b>approved</b>!
             </p>
             <p style="margin:0 0 9px;">
-                You will now be able to access administrative functions for your plugin immediately. To go there, please click <a href="http://stats.pocketmine.net/admin/plugin/$pluginName/view">here</a>.
+                You will now be able to access administrative functions for your plugin immediately. To go there, please click <a href="http://stats.pocketmine.net/admin/viewplugin.php?plugin=$pluginName">here</a>.
             </p>
             <p style="margin:0 0 9px;">
                 If you have any questions at all or just want to relax please feel free to join us in IRC at <code style='padding:2px 4px;font-family:Menlo,Monaco,Consolas,"Courier New",monospace;font-size:12px;color:#d14;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background-color:#f7f7f9;border:1px solid #e1e1e8;'>irc.esper.net #metrics</code> anytime.
@@ -1129,7 +1129,7 @@ END;
                 identify your plugin as a real plugin and to mostly ensure we add the correct person.
             </p>
             <p style="margin:0 0 9px;">
-                When you are ready, please do <a href="/admin/add-plugin/" style="color:#366ddc;text-decoration:none;">resubmit</a> your plugin and hopefully we can get you added this time.
+                When you are ready, please do <a href="/admin/addplugin.php" style="color:#366ddc;text-decoration:none;">resubmit</a> your plugin and hopefully we can get you added this time.
             </p>
             <p style="margin:0 0 9px;">
                 If you still experience issues or would like a better explanation of why your request was rejected please visit us in IRC at <code style='padding:2px 4px;font-family:Menlo,Monaco,Consolas,"Courier New",monospace;font-size:12px;color:#d14;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background-color:#f7f7f9;border:1px solid #e1e1e8;'>irc.esper.net #metrics</code>
@@ -1156,7 +1156,7 @@ $body
 
     <footer class="row-fluid" style="display:block;width:100%;*zoom:1;"><hr style="margin:18px 0;border:0;border-top:1px solid #eeeeee;border-bottom:1px solid #ffffff;">
         <p style="margin:0 0 9px;"> Original service created by Hidendra & MCStats. Modified for PocketMine. Plugins are owned by their respective authors. </p>
-        <p style="margin:0 0 9px;">  <a href="/plugin-list/" style="color:#366ddc;text-decoration:none;">plugin list</a> | <a href="/status/" style="color:#366ddc;text-decoration:none;">backend status</a> | <a href="/admin/" style="color:#366ddc;text-decoration:none;">admin</a> | <a href="http://github.com/shoghicp/stats.pocketmine.net" style="color:#366ddc;text-decoration:none;">github</a> | irc.freenode.net #pocketmine </p>
+        <p style="margin:0 0 9px;">  <a href="/plugin-list.php" style="color:#366ddc;text-decoration:none;">plugin list</a> | <a href="/status.php" style="color:#366ddc;text-decoration:none;">backend status</a> | <a href="/admin/" style="color:#366ddc;text-decoration:none;">admin</a> | <a href="http://github.com/shoghicp/stats.pocketmine.net" style="color:#366ddc;text-decoration:none;">github</a> | irc.freenode.net #pocketmine </p>
     </footer>
 </div>
 

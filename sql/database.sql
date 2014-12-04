@@ -26,7 +26,7 @@ CREATE TABLE `Author` (
   `Created` int(11) NOT NULL,
   PRIMARY KEY (`ID`),
   UNIQUE KEY `name` (`Name`)
-) ENGINE=InnoDB AUTO_INCREMENT=3860 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for AuthorACL
@@ -62,7 +62,7 @@ CREATE TABLE `CustomColumn` (
   PRIMARY KEY (`ID`),
   UNIQUE KEY `idx_name_graph_plugin` (`Name`,`Graph`,`Plugin`),
   KEY `idx_plugin_graph` (`Plugin`,`Graph`)
-) ENGINE=InnoDB AUTO_INCREMENT=976790 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for CustomData
@@ -101,7 +101,7 @@ CREATE TABLE `Graph` (
   KEY `Name` (`Name`),
   KEY `Active` (`Active`),
   KEY `Active2` (`Plugin`,`Active`)
-) ENGINE=InnoDB AUTO_INCREMENT=85652 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for Plugin
@@ -125,7 +125,7 @@ CREATE TABLE `Plugin` (
   KEY `Name` (`Name`),
   KEY `LastUpdated` (`LastUpdated`) USING BTREE,
   KEY `Rank` (`Rank`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=11204 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for PluginRequest
@@ -166,7 +166,7 @@ CREATE TABLE `Server` (
   `java_name` varchar(20) NOT NULL DEFAULT '',
   PRIMARY KEY (`ID`),
   UNIQUE KEY `GUID` (`GUID`)
-) ENGINE=InnoDB AUTO_INCREMENT=9651086 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for ServerBlacklist
@@ -219,4 +219,4 @@ CREATE TABLE `Versions` (
   UNIQUE KEY `Unique` (`Plugin`,`Version`),
   KEY `Plugin` (`Plugin`),
   KEY `Created` (`Created`)
-) ENGINE=InnoDB AUTO_INCREMENT=39878 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;

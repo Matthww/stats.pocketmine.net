@@ -38,7 +38,7 @@ echo <<<END
         <h1 style="margin-bottom:10px; font-size:57px;">Glorious plugin stats!</h1>
         <p>MCStats / Plugin Metrics is the de facto statistical engine for Minecraft, actively used by over <b>$pluginCount</b> plugins.</p>
         <p>Across the world, over <b>$playerCount</b> players have been seen <b>in the last 30 minutes</b> on over <b>$serverCount</b> servers.</p>
-        <p><a href="/learn-more/" class="btn btn-success"><i class="icon-white icon-star-empty"></i> Learn More</a>  <a class="btn btn-primary" href="/plugin-list/"><i class="icon-white icon-th-list"></i> Plugin List</a></p>
+        <p><a href="/learn-more.php" class="btn btn-success"><i class="icon-white icon-star-empty"></i> Learn More</a>  <a class="btn btn-primary" href="/plugin-list.php"><i class="icon-white icon-th-list"></i> Plugin List</a></p>
     </div>
 </div>
 
@@ -65,7 +65,7 @@ foreach (loadPlugins(PLUGIN_ORDER_RANDOM_TOP100, 4) as $plugin) {
                                     <i class="icon-signal"></i>
                                     #{$plugin->getRank()}
                                 </span>
-                <h5><a href="/plugin/$encodedName">$name</a></h5>
+                <h5><a href="/plugin.php?plugin=$encodedName">$name</a></h5>
             </div>
             <div class="widget-content" style="text-align: center;">
                 <img src="http://api.stats.pocketmine.net/plugin-preview/2.0/$encodedName.png" alt="$name" width="100%" />

@@ -23,7 +23,7 @@ send_header();
         </p>
 
         <p>
-            <a href="/admin/add-plugin/" class="btn btn-success btn-large"><i class="icon-white icon-heart"></i> Add a
+            <a href="/admin/addplugin.php" class="btn btn-success btn-large"><i class="icon-white icon-heart"></i> Add a
                 Plugin</a>
         </p>
     </div>

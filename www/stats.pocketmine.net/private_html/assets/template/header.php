@@ -93,7 +93,7 @@ $fileName = strtolower(substr($fileNameWithExt, 0, strpos($fileNameWithExt, '.')
         $plugins_html = '';
         foreach ($accessible_plugins as $plugin) {
             $safeName = htmlentities($plugin->getName());
-            $plugins_html .= '<li><a href="/admin/plugin/' . $safeName . '/view">' . $safeName . '</a></li>';
+            $plugins_html .= '<li><a href="/admin/viewplugin.php?plugin=' . $safeName . '">' . $safeName . '</a></li>';
         }
         if ($plugins_html == '') {
             $plugins_html = '<li><a href="#">No plugins</a></li>';
@@ -132,11 +132,11 @@ END;
         </li>
         <li<?php if ($fileName == 'plugin-list') {
             echo ' class="active"';
-        } ?>><a href="/plugin-list/"><i class="icon icon-list-alt"></i> <span>Plugin List</span></a></li>
+        } ?>><a href="/plugin-list.php"><i class="icon icon-list-alt"></i> <span>Plugin List</span></a></li>
         <li<?php if ($fileName == 'global-stats') {
             echo ' class="active"';
-        } ?>><a href="/global/"><i class="icon icon-signal"></i> <span>Global Statistics</span></a></li>
-        <li><a href="/status/"><i class="icon icon-retweet"></i> <span>Backend Status</span></a></li>
+        } ?>><a href="/global-stats.php"><i class="icon icon-signal"></i> <span>Global Statistics</span></a></li>
+        <li><a href="/status.php"><i class="icon icon-retweet"></i> <span>Backend Status</span></a></li>
         <?php global $sidebar_more;
         if (isset($sidebar_more)) {
             echo $sidebar_more;
@@ -151,7 +151,7 @@ END;
                 } ?>><a href="/admin/">Admin home</a></li>
                 <li<?php if ($fileName == 'addplugin') {
                     echo ' class="active"';
-                } ?>><a href="/admin/add-plugin/">Add a plugin</a></li>
+                } ?>><a href="/admin/addplugin.php">Add a plugin</a></li>
             </ul>
         </li>
 
